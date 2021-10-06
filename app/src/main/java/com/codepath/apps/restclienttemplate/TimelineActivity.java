@@ -1,12 +1,17 @@
 package com.codepath.apps.restclienttemplate;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
@@ -97,7 +102,6 @@ public class TimelineActivity extends AppCompatActivity {
                 Log.e(TAG, "onFailure for loadMoreData", throwable);
             }
         }, tweets.get(tweets.size() - 1).id);
-
     }
 
     private void populateHomeTimeline() {
