@@ -10,7 +10,7 @@
     <application
         android:name=".TwitterApp"
         android:allowBackup="true"
-        android:icon="@drawable/k6QL9"
+        android:icon="@drawable/k6ql9"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity

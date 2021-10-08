@@ -17,6 +17,7 @@
         android:gravity="start|top"
         android:hint="@string/what_s_up"
         android:inputType="textMultiLine"
+        android:textColor="#000000"
         android:minLines="5" />
 
     <Button
